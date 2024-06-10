@@ -75,7 +75,7 @@ header .navbar {
 
 .hero-section {
   height: 100vh;
-  background-image: url("/ConectaA-o/images/hero-img.jpg");
+  background-image: url("/images/hero-img.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
