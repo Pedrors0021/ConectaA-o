@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConectaAção</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo">
+            <img src="/images/logo.svg" alt="Logo ConectaAção" />
+          </a>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#">ConectaAção Termos de uso </a></li>
+          <li><a href="#">Explorar</a></li>
+          <li><a href="formulario_vendedor.html">Torne-se um Vendedor</a></li>
+          <li><a href="cadastro_login.html">Entrar</a></li>
+          <li class="join-btn">
+            <a href="cadastro_login.html">Junte-se a Nós</a>
+          </li>
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Encontre o serviço freelancer certo, imediatamente</h1>
+        <form action="#" class="search-form">
+          <input
+            type="text"
+            placeholder="Pesquise por qualquer serviço..."
+            required
+          />
+          <button class="material-symbols-outlined" type="submit">
+            search
+          </button>
+        </form>
+        <div class="popular-tags">
+          Popular:
+          <ul class="tags">
+            <li><a href="#">Design de Sites</a></li>
+            <li><a href="#">Manutenção</a></li>
+            <li><a href="#">Contabilidade</a></li>
+            <li><a href="#">Advocacia</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () =>
+        header.classList.toggle("show-mobile-menu")
+      );
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+  </body>
+</html>
