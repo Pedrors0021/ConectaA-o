@@ -264,3 +264,17 @@ header .navbar {
     display: none;
   }
 }
+
+.conteudo h1 {
+  color: #fff;
+  font-size: 3rem;
+  max-width: 630px;
+  line-height: 65px;
+}
+
+.conteudo p {
+  color: #fff;
+  font-size: 1rem;
+  max-width: 325px;
+  line-height: 32px;
+}

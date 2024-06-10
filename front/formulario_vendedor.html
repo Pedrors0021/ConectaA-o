@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ConectaAção</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/formulario_vendedor.css">
+    <link rel="stylesheet" href="/css/formulario_vendedor.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -20,101 +19,121 @@
           </a>
         </div>
         <ul class="menu-links">
-          <li><a href="#">Termos de Uso do ConectaAção</a></li>
+          <li><a href="#">ConectaAção Termos de uso </a></li>
           <li><a href="#">Explorar</a></li>
-          <span id="close-menu-btn" class="material-symbols-outlined">fechar</span>
+          <li><a href="cadastro_login.html">Entrar</a></li>
+          <li class="join-btn">
+            <a href="cadastro_login.html">Junte-se a Nós</a>
+          </li>
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
         </ul>
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
       </nav>
     </header>
-    <div class="container">
-        <header>Cadastro</header>
-        <form action="#">
-          <div class="form first">
-            <div class="details personal">
-              <span class="title">Dados Pessoais</span>
-              <div class="fields">
-                <div class="input-field">
-                  <label>Nome Completo</label>
-                  <input type="text" placeholder="Digite seu nome" required />
-                </div>
-                <div class="input-field">
-                  <label>Data de Nascimento</label>
-                  <input type="date" placeholder="Digite sua data de nascimento" required />
-                </div>
-                <div class="input-field">
-                  <label>Email</label>
-                  <input type="text" placeholder="Digite seu email" required />
-                </div>
-                <div class="input-field">
-                  <label>Número de Celular</label>
-                  <input
-                    type="number"
-                    placeholder="Digite seu número de celular"
-                    required
-                  />
-                </div>
-                <div class="input-field">
-                  <label>Gênero</label>
-                  <select required>
-                    <option disabled selected>Selecione o gênero</option>
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                    <option>Outros</option>
-                  </select>
-                </div>
-                <div class="input-field">
-                  <label>Ocupação</label>
-                  <input
-                    type="text"
-                    placeholder="Digite sua ocupação"
-                    required
-                  />
-                </div>
-              </div>
+
+
+
+
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () =>
+        header.classList.toggle("show-mobile-menu")
+      );
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+    
+  </body>
+</html>
+
+<!-- <div class="container">
+    <center><header>Cadastro de vendedor</header></center>
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Dados Pessoais</span>
+          <div class="fields">
+            <div class="input-field">
+              <label>Nome Completo</label>
+              <input type="text" placeholder="Digite seu nome" required />
             </div>
-            <div class="details ID">
-              <span class="title">Detalhes de Identidade</span>
-              <div class="fields">
-                <div class="input-field">
-                  <label>Tipo de Documento de Identidade</label>
-                  <input type="text" placeholder="Digite o tipo de documento de identidade" required />
-                </div>
-                <div class="input-field">
-                  <label>Número do Documento de Identidade</label>
-                  <input type="number" placeholder="Digite o número do documento de identidade" required />
-                </div>
-                <div class="input-field">
-                  <label>Autoridade Emissora</label>
-                  <input
-                    type="text"
-                    placeholder="Digite a autoridade emissora"
-                    required
-                  />
-                </div>
-                <div class="input-field">
-                  <label>Estado Emissor</label>
-                  <input type="text" placeholder="Digite o estado emissor" required />
-                </div>
-                <div class="input-field">
-                  <label>Data de Emissão</label>
-                  <input
-                    type="date"
-                    placeholder="Digite a data de emissão"
-                    required
-                  />
-                </div>
-                <div class="input-field">
-                  <label>Data de Expiração</label>
-                  <input type="date" placeholder="Digite a data de expiração" required />
-                </div>
-              </div>
-              <button class="nextBtn">
-                <span class="btnText">Realizar cadastro</span>
-                <i class="uil uil-navigator"></i>
-              </button>
+            <div class="input-field">
+              <label>Data de Nascimento</label>
+              <input type="date" placeholder="Digite sua data de nascimento" required />
+            </div>
+            <div class="input-field">
+              <label>Email</label>
+              <input type="text" placeholder="Digite seu email" required />
+            </div>
+            <div class="input-field">
+              <label>Número de Celular</label>
+              <input
+                type="number"
+                placeholder="Digite seu número de celular"
+                required/>
+            </div>
+            <div class="input-field">
+              <label>Gênero</label>
+              <select required>
+                <option disabled selected>Selecione o gênero</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outros</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label>Ocupação</label>
+              <input
+                type="text"
+                placeholder="Digite sua ocupação"
+                required
+              />
             </div>
           </div>
-       </body>
-  </html>
-  
+        </div>
+        <div class="details ID">
+          <span class="title">Detalhes de Identidade</span>
+          <div class="fields">
+            <div class="input-field">
+              <label>Tipo de Documento de Identidade</label>
+              <input type="text" placeholder="Digite o tipo de documento de identidade" required />
+            </div>
+            <div class="input-field">
+              <label>Número do Documento de Identidade</label>
+              <input type="number" placeholder="Digite o número do documento de identidade" required />
+            </div>
+            <div class="input-field">
+              <label>Autoridade Emissora</label>
+              <input
+                type="text"
+                placeholder="Digite a autoridade emissora"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Estado Emissor</label>
+              <input type="text" placeholder="Digite o estado emissor" required />
+            </div>
+            <div class="input-field">
+              <label>Data de Emissão</label>
+              <input
+                type="date"
+                placeholder="Digite a data de emissão"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Data de Expiração</label>
+              <input type="date" placeholder="Digite a data de expiração" required />
+            </div>
+          </div>
+          <button class="nextBtn">
+            <span class="btnText">Realizar cadastro</span>
+            <i class="uil uil-navigator"></i>
+          </button>
+        </div>
+      </div>  -->
