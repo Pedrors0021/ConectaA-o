@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/cadastrar.css">
+    <link rel="stylesheet" href="/ConectaA-o/css/cadastrar.css">
     <title>Cadastro/login</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/ConectaA-o/css/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html" class="logo">
-                  <img src="/images/logo.svg" alt="Logo ConectaAção" />
+                  <img src="/ConectaA-o/images/logo.svg" alt="Logo ConectaAção" />
                 </a>
               </div>
           <ul class="menu-links">
@@ -68,6 +68,17 @@
                     </div>
                 </div>
             </div>
-            <script src="/js/script.js"></script>
+            
+            <script>
+                const header = document.querySelector("header");
+                const hamburgerBtn = document.querySelector("#hamburger-btn");
+                const closeMenuBtn = document.querySelector("#close-menu-btn");
+          
+                hamburgerBtn.addEventListener("click", () =>
+                  header.classList.toggle("show-mobile-menu")
+                );
+                closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+              </script>
+            <script src="/ConectaA-o/js/script.js"></script>
 </body>
 </html>
