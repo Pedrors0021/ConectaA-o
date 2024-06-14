@@ -412,7 +412,7 @@
         background-color: #1dbf73;
         color: #fff;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 400;
         border-radius: 5px;
         text-decoration: none;
         transition: background-color 0.3s ease;
@@ -436,10 +436,15 @@
       .card {
         position: relative;
         width: 100%;
-        padding-top: 75%; /* Aspect Ratio 4:3 */
+        padding-top: 75%; /* Proporção para manter a altura do card */
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
       }
 
       .card img {
@@ -449,6 +454,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: opacity 0.3s ease-out; /* Adicionando transição de opacidade para a imagem */
+      }
+
+      .card:hover img {
+        opacity: 0.8; /* Reduzindo um pouco a opacidade ao passar o mouse */
       }
 
       .card-text {
@@ -460,6 +470,7 @@
         padding: 10px;
         text-align: center;
         font-size: 1rem;
+        transition: opacity 0.3s ease-out; /* Adiciona transição de opacidade para o texto */
       }
 
       /* Estilos para a faixa do como funciona*/
@@ -546,11 +557,10 @@
         </div>
         <ul class="menu-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/servicos">Serviços</a></li>
-          <li><a href="/contato">Contato</a></li>
+          <li><a href="explorar.html">Explorar serviços</a></li>
+          <li><a href="sobre.html">Quem Somos?</a></li>
           <li class="join-btn">
-            <a href="../front/cadastro_login.html">Cadastre-se</a>
+            <a href="cadastro_login.html">Cadastre-se</a>
           </li>
         </ul>
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
@@ -577,38 +587,35 @@
       <!-- Container dos cards -->
       <div class="cards-container">
         <div class="card">
-          <img src="../images/editor_video.png" alt="Editor de Vídeo" />
+          <img src="../images/editor de video.jpg" alt="Editor de Vídeo" />
           <div class="card-text">Eu sou editor de vídeo</div>
         </div>
         <div class="card">
-          <img src="../images/designer_grafico.png" alt="Designer Gráfico" />
+          <img src="../images/designer grafico.jpg" alt="Designer Gráfico" />
           <div class="card-text">Eu sou designer gráfico</div>
         </div>
         <div class="card">
-          <img src="../images/programador.png" alt="Desenvolvedor Web" />
+          <img src="../images/programador.jpg" alt="Desenvolvedor Web" />
           <div class="card-text">Eu sou desenvolvedor web</div>
         </div>
         <div class="card">
-          <img src="../images/fotografo.png" alt="Fotógrafo" />
+          <img src="../images/fotografo.jpg" alt="Fotógrafo" />
           <div class="card-text">Eu sou fotógrafo</div>
         </div>
         <div class="card">
-          <img src="../images/desenhista.png" alt="Desenhista" />
+          <img src="../images/desenhista.jpg" alt="Desenhista" />
           <div class="card-text">Eu sou Desenhista</div>
         </div>
         <div class="card">
-          <img src="../images/mecanico.png" alt="Mecânico" />
+          <img src="../images/mecanico.jpg" alt="Mecânico" />
           <div class="card-text">Eu sou Mecânico</div>
         </div>
         <div class="card">
-          <img
-            src="../images/consultor_marketing.png"
-            alt="Consultor de Marketing"
-          />
+          <img src="../images/marketing.jpg" alt="Consultor de Marketing" />
           <div class="card-text">Eu sou consultor de marketing</div>
         </div>
         <div class="card">
-          <img src="../images/eletricista.png" alt="Assistente Virtual" />
+          <img src="../images/eletricista.jpg" alt="Assistente Virtual" />
           <div class="card-text">Eu sou Eletricista</div>
         </div>
       </div>
@@ -649,7 +656,7 @@
       </div>
       <center>
         <a href="../front/cadastro_login.html" class="btn-vendedor_2"
-          >Faça parte!</a
+          >Comec agora!</a
         >
       </center>
     </main>
