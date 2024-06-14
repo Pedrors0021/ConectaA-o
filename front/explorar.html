@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ConectaAção</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/explorar.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -33,18 +34,80 @@
 
 
     <section class="conteudo">
-        <center>
-            <h1>Quem somos?</h1>
-        </center><br>
-        <center>
-            <p>Somos um grupo da FATEC de matão, estamos criando um projeto com o objetivo de ajudar pessoas em diversas
-                condições financeiras, com um foco especial em pessoas de baixa renda. A intenção do projeto é criar uma
-                plataforma onde essas pessoas possam encontrar oportunidades de trabalho e oferecer seus serviços
-                diretamente no site. Com isso, elas poderão ser contratadas por outras pessoas, facilitando o acesso a
-                empregos e melhorando suas condições de vida. Nosso compromisso é fornecer um espaço inclusivo e
-                acessível que promova a conexão entre trabalhadores e empregadores, contribuindo para a redução das
-                desigualdades sociais e o fortalecimento da economia local.</p>
-        </center>
+        <div class="explorar">
+            <div class="coluna-filtros">
+                <div class="filtros">
+                    <div class="opcao">
+                        <label for="preco-max">Preço máximo</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="range" value="200" min="100" max="10000" oninput="this.nextElementSibling.value = this.value" name="preco-max" class="preco-max">
+                        R$ <output>200</output>
+                    </div>
+                    <hr>
+                    <div class="opcao">
+                        <label for="categoria">Categoria</label>
+                    </div>
+                    <div class="opcao">
+                        <select name="categoria" id="categoria" class="categoria">
+                            <option value="1">Edição de vídeo</option>
+                            <option value="2">Design</option>
+                            <option value="3">Programação</option>
+                            <option value="4">Fotografia</option>
+                            <option value="5">Arte</option>
+                            <option value="6">Manutenção</option>
+                            <option value="7">Marketing</option>
+                            <option value="8">Reforma</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="opcao">
+                        <label for="regiao">Região</label>
+                    </div>
+                    <div class="opcao">
+                        <select name="regiao" id="regiao" class="regiao">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="opcao">
+                        <button class="botao">Aplicar</button>
+                    </div>
+                    <div class="opcao">
+                        <button class="botao">Limpar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna-servicos">
+                
+            </div>
+        </div>
     </section>
 
     <script>
